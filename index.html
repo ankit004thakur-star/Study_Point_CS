@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS Study Material - Your complete guide to Computer Science fundamentals">
+    <meta name="theme-color" content="#0f172a">
+    <title>CS Study Material | Master Computer Science</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">CS Study</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#topics" class="nav-link">Topics</a></li>
+                    <li><a href="#resources" class="nav-link">Resources</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Master Computer Science</h1>
+                    <p class="hero-subtitle">Comprehensive study materials for DSA, System Design, Web Dev, and more</p>
+                    <button class="btn btn-primary" onclick="document.getElementById('topics').scrollIntoView({behavior: 'smooth'})">Explore Topics</button>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-preview">
+                        <div class="code-line"><span class="keyword">function</span> <span class="function">learn</span>() {</div>
+                        <div class="code-line indent-1"><span class="keyword">const</span> <span class="variable">progress</span> = <span class="string">"exponential"</span></div>
+                        <div class="code-line indent-1"><span class="keyword">return</span> <span class="variable">success</span> ✓</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="topics-section">
+            <h2 class="section-title">Topics Covered</h2>
+            <p class="section-subtitle">Select a topic to dive deeper into CS fundamentals</p>
+            
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topics will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Content Area -->
+        <section id="content-area" class="content-area hidden">
+            <button class="back-btn" onclick="backToTopics()">← Back to Topics</button>
+            <div class="content-container">
+                <aside class="sidebar">
+                    <nav class="toc" id="tableOfContents">
+                        <!-- TOC will be populated by JavaScript -->
+                    </nav>
+                </aside>
+                <article class="main-content">
+                    <h2 id="contentTitle" class="content-title">Data Structures</h2>
+                    <div id="contentBody" class="content-body">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <h2 class="section-title">Learning Resources</h2>
+            <p class="section-subtitle">Curated links and references for deeper learning</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Official docs and specifications for languages and frameworks</p>
+                    <a href="#" class="resource-link">Explore →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🎥</div>
+                    <h3>Video Tutorials</h3>
+                    <p>High-quality video explanations of complex concepts</p>
+                    <a href="#" class="resource-link">Watch →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🧪</div>
+                    <h3>Interactive Labs</h3>
+                    <p>Hands-on coding exercises and problem-solving challenges</p>
+                    <a href="#" class="resource-link">Practice →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Connect with other learners and get help from experts</p>
+                    <a href="#" class="resource-link">Join →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About This Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>What is CS Study Material?</h3>
+                    <p>A comprehensive, open-source platform designed to help students and professionals master Computer Science fundamentals. From basic data structures to advanced system design, we've organized everything you need to succeed.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>Make quality CS education accessible to everyone, everywhere. We believe in learning-by-doing and providing clear, structured content that builds real understanding.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Core Topics</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Code Examples</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">Open</div>
+                            <div class="stat-label">Source</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="section-subtitle">Have suggestions? Want to contribute? We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <p>📧 Email: contact@csstudy.dev</p>
+                    <p>🐙 GitHub: github.com/csstudy</p>
+                    <p>💬 Discord: Join our community</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 CS Study Material. Made with ❤️ for learners everywhere.</p>
+            <div class="footer-links">
+                <a href="#license">License</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contribute">Contribute</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>

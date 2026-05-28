@@ -1,0 +1,76 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Node.js and npm
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+.npm
+
+# Build outputs
+dist/
+build/
+*.bundle.js
+*.min.js
+*.min.css
+
+# Logs
+logs/
+*.log
+
+# OS specific
+Thumbs.db
+.Thumbs.db
+
+# Testing
+.coverage
+coverage/
+*.lcov
+
+# Documentation build
+docs/_build/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# IDE specific files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Project specific
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Local development
+local/
+temp/
+.env.development.local
+.env.test.local
+
+# Production
+.env.production.local
+.env.production
+
+# Misc
+*.pem
+*.key
