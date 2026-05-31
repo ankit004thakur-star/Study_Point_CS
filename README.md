@@ -226,12 +226,7 @@ A: Yes! Follow the Contributing guidelines to submit your topics.
 **Q: Is there a mobile app?**
 A: Not yet, but it's on our roadmap!
 
-## 📞 Contact & Support
 
-- 📧 Email: contact@csstudy.dev
-- 🐙 GitHub: [github.com/csstudy](https://github.com/csstudy)
-- 💬 Discord: [Join our community](#)
-- 🐦 Twitter: [@CSStudy](#)
 
 ## 🙌 Acknowledgments
 
