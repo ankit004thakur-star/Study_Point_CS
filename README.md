@@ -239,15 +239,7 @@ A: Not yet, but it's on our roadmap!
 - Built with ❤️ for learners everywhere
 - Thanks to all contributors and community members
 
-## 📚 Additional Resources
 
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [LeetCode](https://leetcode.com/)
-- [HackerRank](https://www.hackerrank.com/)
-- [Coursera](https://www.coursera.org/)
-
----
 
 **Made with ❤️ by Computer Science Enthusiasts**
 
