@@ -421,6 +421,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 256
 
+
 {"id": 1, "name": "John", "email": "john@example.com"}</code></pre>
 
             <h3>Network Security</h3>
@@ -442,7 +443,49 @@ Content-Length: 256
         `
     }
 ];
+{
+    id: 'graphql',
+    title: 'GraphQL',
+    icon: '🚀',
+    description: 'Learn modern API query language',
+    shortContent: 'Queries, Mutations, Schemas, Resolvers, Apollo',
+    content: `
+        <h3>Introduction to GraphQL</h3>
+        <p>GraphQL is a query language for APIs developed by Meta.</p>
 
+        <h3>Core Concepts</h3>
+        <ul>
+            <li><strong>Query:</strong> Fetch data</li>
+            <li><strong>Mutation:</strong> Modify data</li>
+            <li><strong>Schema:</strong> Defines API structure</li>
+            <li><strong>Resolver:</strong> Handles data fetching</li>
+        </ul>
+
+        <h3>Example Query</h3>
+        <pre><code>
+query {
+  user(id: 1) {
+    name
+    email
+  }
+}
+        </code></pre>
+
+        <h3>Learning Objectives</h3>
+        <ul>
+            <li>Understand GraphQL architecture</li>
+            <li>Write queries and mutations</li>
+            <li>Build GraphQL APIs</li>
+        </ul>
+
+        <h3>Practice Problems</h3>
+        <ul>
+            <li>Create a user query</li>
+            <li>Build a mutation for registration</li>
+            <li>Create nested queries</li>
+        </ul>
+    `
+}
 // ==================== EXPORT ====================
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { studyTopics };
